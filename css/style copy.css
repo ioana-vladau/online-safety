@@ -1,0 +1,238 @@
+/*NEEEEEEEWWW*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+}
+
+:root {
+    --20thcentery-font: '20thcentery', sans-serif;
+    --black-color: #212323;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fcfcfc;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ff5a3d;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnavMove{
+    margin-top:20px;
+    color: black !important;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.didYouLookBehind{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 60% !important;
+    height:90%;
+    padding-top: 3vh;
+    margin:0 auto;
+}
+
+#logo {
+    width: 190px;
+    height: 70px;
+    background-image: url(../img/Screen%20Shot%202018-04-13%20at%2019.26.11.png);
+    background-size: cover;
+    margin-right:13vh;
+}
+
+#look{
+    font-size:1.3em;
+    font-family: var(--20thcentery-font);
+    margin-top:13%;
+    margin-bottom:13%;
+    margin-left:40%;
+    padding:0.5em;
+    margin-right:auto;
+    border: 2px solid black;
+    color:#ff5a3d;
+}
+
+#learn {
+    font-size: 1.8em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top:8vh;
+    text-align: center;
+    color:#212323;
+    font-family: var(--20thcentery-font);
+    font-weight:100;
+}
+
+.fa-chevron-down {
+    margin-top: -200%;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.arrow {
+    margin-left: 45%;
+    margin-right: auto;
+    width: 40px;
+    cursor: pointer;
+    color: #ff5a3d;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 4s infinite;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#computerAnim,
+#emailAnim,
+#passwordAnim {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    width: 40%;
+}
+
+/* THIS IS THE MOBILE VERSION */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    
+    #logo {
+    width: 110px;
+    height: 40px;
+    background-image: url(../img/Screen%20Shot%202018-04-13%20at%2019.26.11.png);
+    background-size: cover;
+}
+
+    .didYouLookBehind{
+    width:90%;
+    padding-top:15vh;
+    padding-left:10vw;
+    padding-right: 10vw;
+    }
+    
+    #learn {
+    font-size: 1.3em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom:4vh;
+    margin-top:8vh;
+}
+    .column {
+        width: 100%;
+    }
+    
+    #look{
+    font-size:1.3em;
+    margin-top:13%;
+    margin-bottom:13%;
+    margin-left:32%;
+    margin-right:auto;
+}
+    
+}
+
+
+/* THIS IS THE END OF THE MOBILE VERSION*/
+
+
+footer {
+    background-color:gray;
+}
+
+.footer-social-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+#footer {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: #b5b8bc;
+    font-family: var(--20thcentery-font);
+}
